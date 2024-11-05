@@ -1,0 +1,41 @@
+
+### get all product details.
+
+GET http://localhost:3000/products
+Content-Type: application/json
+
+### get a products by id
+
+GET http://localhost:3000/products/2
+Content-Type: application/json
+
+### post method for add new product.
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "Ice-cream",
+    "price": "25.99",
+    "discount": "25%",
+    "store": "K-supermarket"
+}
+
+### Put for update a products.
+
+PUT http://localhost:3000/products/5
+Content-Type: application/json
+
+{
+    "name": "Ice-cream 2",
+    "price": "15",
+    "discount": "35%",
+    "store": "K-supermarket"
+}
+
+
+### delete a product.
+
+DELETE http://localhost:3000/products/5
+Content-Type: application/json
+
